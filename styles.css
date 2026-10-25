@@ -1,4 +1,4 @@
-/* ===== PALETA DE COLORES ===== */
+/* ===== Variables ===== */
 :root{
   --noche:#120a1f;      /* fondo principal */
   --ciruela:#2a1646;    /* fondo de tarjetas */
@@ -46,11 +46,12 @@ a{color:var(--dorado)}
 .hero h1{font-size:clamp(2.6rem,9vw,5rem);line-height:1.05;font-style:italic;margin-bottom:1rem}
 .hero p{color:var(--lila);font-size:1.1rem;max-width:30rem;margin:0 auto 2rem}
 .murci{position:absolute;z-index:2;pointer-events:none;fill:#05020a;stroke:var(--lila);stroke-width:1;opacity:.9;animation:vuelo 7s ease-in-out infinite}
-/* Celular: los murciélagos van arriba y abajo para no taparse con la luna */
+
+/* Celular */
 .m1{width:52px;top:13%;left:6%}.m2{width:36px;top:10%;right:9%;animation-delay:-2s}
 .m3{width:44px;bottom:7%;right:8%;animation-delay:-4s}.m4{width:32px;bottom:11%;left:10%;animation-delay:-1s}
 @keyframes vuelo{50%{transform:translate(14px,-16px) rotate(4deg)}}
-/* Escritorio: murciélagos y luna más grandes (cambiá los px para ajustarlos) */
+/* Escritorio: murciélagos y luna más grandes */
 @media (min-width:768px){
   .m1{width:150px;top:20%;left:7%}
   .m2{width:100px;top:12%;right:14%}
